@@ -8,6 +8,7 @@ searchBtn.addEventListener('click', function() {
     fetch(url)  
     .then((response) => response.json())
     .then ((data) => {
+        console.log(data[0])
         result.innerHTML = `<img src = "${data[0].flags.png}" class="flag-img">`;
     });
 }); 
