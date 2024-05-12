@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proiect despre tari</title>
+    <title>Afișare random de steaguri</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,13 +16,11 @@
             <li><a href="guessCountries.html">Countries quiz</a></li>
         </ul>
     </nav>
-    <div class="container">
-        <div class="search-box">
-            <input type="text" id="searchInput" placeholder="Cauta tara...">
-            <button id="searchBtn">Cauta</button>
-        </div>
-        <div id="result"></div>
-    </div>
+    <h1>Afișare random de steaguri</h1>
+    <div id="flag"></div>
+    <input type="text" id="countryInput" placeholder="Al carei tari este steagul de mai sus?"> 
+    <button id="submitBtn">Verifica</button>
+    <div id="result"></div>
     <main>
         <section>
             <h2>Despre proiect</h2>
@@ -35,7 +31,6 @@
         <p>&copy; 2024 Proiect Web</p>
         <p>Proiect realizat de: <a href="mailto: andreidan972@gmail.com">Andrei Dan</a> &amp; <a href="mailto: adita1adita@yahoo.com">Adrian Boabes</a></p> 
     </footer>
-    <script src="script.js"></script>
+    <script src="guesser.js"></script>
 </body>
-</html>
- 
+</html> 
