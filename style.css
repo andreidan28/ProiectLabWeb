@@ -25,6 +25,7 @@ footer {
     color: white;
     padding: 1rem;
     text-align: center;
+    margin-top: auto;
 }
 
 .container {
@@ -108,4 +109,7 @@ body {
     background-color: ivory; /* Set background color of the body to pink */
     margin: 0; /* Reset default margin */
     padding: 0; /* Reset default padding */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set the minimum height of the body to 100% of the viewport height */
 }
