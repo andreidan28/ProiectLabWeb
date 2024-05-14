@@ -11,4 +11,4 @@ searchBtn.addEventListener('click', function() {
         console.log(data[0])
         result.innerHTML = `<img src = "${data[0].flags.png}" class="flag-img">`;
     });
-}); 
+});
