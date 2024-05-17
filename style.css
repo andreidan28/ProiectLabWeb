@@ -150,14 +150,6 @@ footer {
     text-align: center;
 }
 
-.flag {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    margin: 1rem;
-}
-
 img {
     border-radius: 1rem;
 }
