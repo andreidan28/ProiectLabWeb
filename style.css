@@ -9,16 +9,21 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    text-align: center;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #D3D3D3; 
+    background-color: #333; 
     color: white;
     padding: 1rem;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    width: 100%;
+    top:0;
 }
 header h1{
     margin: 0;
@@ -30,15 +35,6 @@ header a {
 header a:hover {
     color: pink;
 }
-/* 
-nav {
-    background-color: #d3d3d3c2; 
-    color: pink;
-    padding: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
 
 nav ul {
     list-style-type: none;
@@ -61,30 +57,36 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 5rem;
+    padding: 1rem;
     flex-grow: 1;
 }
 
+main h1{
+    margin: 1rem;
+}
+
+.main-content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    position : relative;
+    margin-bottom: 1rem;
+}
+
 footer {
-    background-color: #D3D3D3; 
+    background-color: #333; 
     color: white;
     padding: 1rem;
     text-align: center;
-    margin-top: auto;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    text-align: center;
-    
+    position: fixed;
+    width:100%;
+    bottom:0;
 }
 
 .search-box {
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin: 2rem;
     padding: 2rem;
     
 }
@@ -123,10 +125,10 @@ footer {
 }
 
 .country-item {
-    flex-basis: calc(33.33% - 20px); /* 33.33% width for each country with some margin */
-    margin-right: 20px; /* Adjust as needed */
+    flex-basis: calc(33.33% - 20px); 
+    margin-right: 20px; 
    
-    margin-bottom: 20px; /* Adjust as needed */
+    margin-bottom: 20px;
     
 }
 
@@ -143,14 +145,33 @@ footer {
   
 }
 
-.flag-img {
-    max-width: 90%;
-    max-height: 90%;
-}
 .country-capital {
     text-align: center;
-    margin-top: 5px; /* Adjust as needed */
+    margin-top: 5px;
 }
 .title{
     text-align: center;
+}
+
+.flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 1rem;
+}
+
+img {
+    border-radius: 1rem;
+}
+
+.mail-link{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.flag img {
+    width: 40rem;
+    height: auto;
+    max-width: 100%;
 }
