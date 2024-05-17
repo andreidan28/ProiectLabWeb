@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Afișare random de steaguri</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1><a href="index.html">Proiect despre tari</a></h1>
-    <nav>
+      <h1><a href="index.html">Proiect despre tari</a></h1>
+      <nav>
         <ul>
-            <li><a href="index.html">Acasa</a></li>
-            <li><a href="tari.html">Tari</a></li>
-            <li><a href="guessCountries.html">Countries quiz</a></li>
-            <li><a href="about.html">About</a></li>
+          <li><a href="index.html">Acasa</a></li>
+          <li><a href="tari.html">Tari</a></li>
+          <li><a href="guessCountries.html">Countries quiz</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
-    </nav>
+      </nav>
     </header>
     <main class="main-content">
-        <h1>Afișare random de steaguri</h1>
-        <div id="flag" class="flag"></div>
-        <div class="search-box">
-            <input type="text" id="countryInput" placeholder="Al carei tari este steagul de mai sus?"> 
-            <button id="submitBtn">Verifica</button>
-        </div>
-        <div id="result" class="flag"></div>
+      <h1>Afișare random de steaguri</h1>
+      <div id="flag" class="flag"></div>
+      <div class="search-box">
+        <input
+          type="text"
+          id="countryInput"
+          placeholder="Al carei tari este steagul de mai sus?"
+        />
+        <button id="submitBtn">Verifica</button>
+      </div>
+      <div id="result" class="flag"></div>
     </main>
     <footer>
-        <p>&copy; 2024 Proiect Web</p>
-        <p>Proiect realizat de: <a href="mailto: andreidan972@gmail.com">Andrei Dan</a> &amp; <a href="mailto: adita1adita@yahoo.com">Adrian Boabes</a></p> 
+      <p>&copy; 2024 Proiect Web</p>
+      <p>
+        Proiect realizat de:
+        <a href="mailto: andreidan972@gmail.com" class="mail-link"
+          >Andrei Dan</a
+        >
+        &amp;
+        <a href="mailto: adita1adita@yahoo.com" class="mail-link"
+          >Adrian Boabes</a
+        >
+      </p>
     </footer>
     <script src="guesser.js"></script>
-</body>
-</html> 
+  </body>
+</html>

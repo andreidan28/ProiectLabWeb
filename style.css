@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #D3D3D3; 
+    background-color: #333; 
     color: white;
     padding: 1rem;
     text-align: center;
@@ -68,7 +68,7 @@ main {
 }
 
 footer {
-    background-color: #D3D3D3; 
+    background-color: #333; 
     color: white;
     padding: 1rem;
     text-align: center;
@@ -128,10 +128,10 @@ footer {
 }
 
 .country-item {
-    flex-basis: calc(33.33% - 20px); /* 33.33% width for each country with some margin */
-    margin-right: 20px; /* Adjust as needed */
+    flex-basis: calc(33.33% - 20px); 
+    margin-right: 20px; 
    
-    margin-bottom: 20px; /* Adjust as needed */
+    margin-bottom: 20px;
     
 }
 
@@ -154,7 +154,7 @@ footer {
 }
 .country-capital {
     text-align: center;
-    margin-top: 5px; /* Adjust as needed */
+    margin-top: 5px;
 }
 .title{
     text-align: center;
@@ -162,8 +162,17 @@ footer {
 
 .flag {
     display: flex;
-    justify-content: center; /* Centrează pe axa orizontală */
-    align-items: center; /* Centrează pe axa verticală */
-    height: 100vh; /* Înălțimea containerului este egală cu înălțimea vizualizării */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     max-height: 500px;
+}
+
+img {
+    border-radius: 1rem;
+}
+
+.mail-link{
+    color: #fff;
+    text-decoration: underline;
 }
