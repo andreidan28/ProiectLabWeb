@@ -170,3 +170,8 @@ img {
     text-decoration: underline;
 }
 
+.flag img {
+    width: 40rem;
+    height: auto;
+    max-width: 100%;
+}
