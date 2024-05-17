@@ -17,8 +17,137 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>About...to be added</h1>
+    <main class="main">
+      <h1>About</h1>
+      <section>
+        <h2>Despre Proiect</h2>
+        <p>
+          Acest proiect a fost realizat la laboratorl de tehnologii Web. Are
+          scopul de a gasi steagul tarii dorite, de a afisa o lista cu toate
+          tarile si capitalele aferente, dar si un mic quiz cu steagul unei tari
+          random.
+        </p>
+      </section>
+      <section>
+        <h2>Detalii de Implementare</h2>
+        <h3>Proiectul a fost realizat folosind următoarele tehnologii:</h3>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>
+          API-ul
+          <a href="https://restcountries.com/#rest-countries">REST Countries</a>
+          pentru a obtine datele necesare despre tari
+        </li>
+      </section>
+      <section>
+        <h2>Exemple de cod</h2>
+        <h3>HTML</h3>
+        <pre><code>
+            &lt;header&gt;
+        &lt;h1&gt;&lt;a href="index.html"&gt;Proiect despre tari&lt;/a&gt;&lt;/h1&gt;
+        &lt;nav&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="index.html"&gt;Acasa&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="tari.html"&gt;Tari&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="guessCountries.html"&gt;Quiz Steaguri&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/nav&gt;
+        &lt;/header&gt;
+        &lt;main class="main-content"&gt;
+        &lt;h1&gt;Quiz&lt;/h1&gt;
+        &lt;div id="flag" class="flag"&gt;&lt;/div&gt;
+        &lt;div class="search-box"&gt;
+          &lt;input
+            type="text"
+            id="countryInput"
+            placeholder="Al carei tari este steagul de mai sus?"
+          /&gt;
+          &lt;button id="submitBtn"&gt;Verifica&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div id="result" class="result"&gt;&lt;/div&gt;
+        &lt;/main&gt;
+          </code></pre>
+        <h3>CSS</h3>
+        <pre><code>
+          .search-box {
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+            padding: 2rem;
+            
+        }
+        
+        .search-box input {
+            padding: 1rem;
+            width: 50%;
+            font-size: 2rem;
+            border: none;
+            border-radius: 1rem;
+        }
+        
+        .search-box button {
+            background-color: #d3d3d3;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            margin-left: 1rem;
+            cursor: pointer;
+            border-radius: 1rem;
+            font-size: 2rem;
+        }
+        
+        .search-box button:hover {
+            background-color: pink;
+        }  
+          </code></pre>
+        <h3>JavaScript</h3>
+        <pre><code>
+            </code></pre>
+      </section>
+      <section>
+        <h2>Pagini</h2>
+        <p>
+          Proiectul contine 4 pagini:
+          <li>
+            <b>Acasa</b> - Functionalitatea acestei pagini consta in search-ul
+            implementat pentru a returna steagul oricarei tari
+          </li>
+          <img
+            src="code-photos/acasa-example.png"
+            alt="Exemplu pagina acasa"
+            class="code-image"
+          />
+          <li>
+            <b>Tari</b> - Aici se afiseaza o lista cu toate tarile si capitalele
+            aferente
+          </li>
+          <img
+            src="code-photos/tari-example.png"
+            alt="Exemplu pagina tari"
+            class="code-image"
+          />
+          <li>
+            <b>Quiz Steaguri</b> - Aici se afiseaza un steag random si
+            utilizatorul trebuie sa ghiceasca tara
+          </li>
+          <img
+            src="code-photos/quiz-example.png"
+            alt="Exemplu pagina quiz"
+            class="code-image"
+          />
+          <li>
+            <b>About</b> - Aceasta pagina contine informatii despre proiect si
+            despre implementare
+          </li>
+          <img
+            src="code-photos/about-example.png"
+            alt="Exemplu pagina about"
+            class="code-image"
+          />
+        </p>
+      </section>
     </main>
     <footer>
       <p>&copy; 2024 Proiect Web</p>

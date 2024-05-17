@@ -1,22 +1,34 @@
 let submitBtn = document.getElementById("submitBtn");
 window.onload = function () {
-  let url = `https://restcountries.com/v3.1/all`;
-  let flag = document.getElementById("flag");
-  let result = document.getElementById("result");
-  fetch(url)
+  fetch(`https://restcountries.com/v3.1/all`)
     .then((response) => response.json())
     .then((data) => {
-      let randomCountry = data[Math.floor(Math.random() * data.length)];
-      console.log(randomCountry);
-      flag.innerHTML = `<img src = "${randomCountry.flags.png}" class="flag-img">`;
+      let country = generateFlag(data);
+      displayFlag(country);
       submitBtn.addEventListener("click", function () {
         let countryInput = document.getElementById("countryInput").value;
-        if (countryInput === randomCountry.name.common) {
-          result.innerHTML = "Correct!";
-        } else {
-          result.innerHTML =
-            "Incorrect! Tara este " + randomCountry.name.common + "!";
-        }
+        checkAnswer(country, countryInput);
       });
     });
 };
+
+function generateFlag(data){
+  let randomCountry = data[Math.floor(Math.random() * data.length)];
+  console.log(randomCountry);
+  return randomCountry;
+}
+
+function displayFlag(randomCountry){
+  let flag = document.getElementById("flag");
+  flag.innerHTML = `<img src = "${randomCountry.flags.png}" class="flag-img">`;
+}
+
+function checkAnswer(country,countryInput){
+  let result = document.getElementById("result");
+  if (countryInput === country.name.common) {
+    result.innerHTML = "Correct!";
+  } else {
+    result.innerHTML =
+      "Incorrect! Tara este " + country.name.common + "!";
+  }
+}
